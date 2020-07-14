@@ -6,7 +6,7 @@ window.addEventListener('load', init);
 
 function init() {  
   const inputs = document.querySelectorAll('input')
-  inputs.forEach(input => input.addEventListener('change', changeColor))
+  inputs.forEach(input => input.addEventListener('input', changeColor))
 }
 
 const changeColor = () => {
@@ -18,7 +18,7 @@ const changeColor = () => {
   redValue.value = red.value;
   greenValue.value = green.value;
   blueValue.value = blue.value
- 
+   
   square.style.backgroundColor = `rgb(${red.value}, ${green.value}, ${blue.value})`
 }
 

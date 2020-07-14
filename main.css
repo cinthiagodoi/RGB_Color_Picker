@@ -16,7 +16,6 @@ body {
   margin: 0px;
   display: flex;
   flex-direction: column;
-  
 }
 
 #square {
@@ -55,7 +54,6 @@ span{
 
 input[type=text]{
   width: 35px;
-
 }
 
 input[type='range'] {
@@ -66,10 +64,11 @@ input[type='range'] {
 }
 input[type='range'],
 input[type='range']::-webkit-slider-runnable-track,
-input[type='range']::-webkit-slider-thumb {
+input[type='range']::-webkit-slider-thumb,
+input[type="range"]::-moz-range-thumb{
   -webkit-appearance: none;
 }
-input[type='range']::-webkit-slider-runnable-track {
+input[type='range']::-webkit-slider-runnable-track{
   width: 200px;
   height: 10px;
   background: #AAA;
@@ -81,9 +80,22 @@ input[type='range']::-webkit-slider-thumb {
   margin-top: -7px;
   background: #ff5e6c;
   border-radius: 50%;
-  
 }
 
+input[type=range]::-moz-range-track {
+  width: 200px;
+  height: 10px;
+  background: #AAA;
+}
+
+input[type=range]::-moz-range-thumb {
+  position: relative;
+  height: 20px;
+  width: 20px;
+  margin-top: -7px;
+  background: #ff5e6c;
+  border-radius: 50%;
+}
 #greenSpan{
   margin-right: 12px;
 }
